@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- دایره مشکی پس‌زمینه -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+    
+    <!-- حلقه سبز -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF00FF41"
+        android:strokeWidth="3"
+        android:pathData="M54,54m-38,0a38,38 0,1 1,76 0a38,38 0,1 1,-76 0"/>
+    
+    <!-- علامت سوال -->
+    <path
+        android:fillColor="#FF00FF41"
+        android:pathData="M54,28c-8,0 -14,6 -14,14h6c0,-4.4 3.6,-8 8,-8s8,3.6 8,8c0,5 -3,7.5 -6,10.5l-1.5,1.5c-3,3 -4.5,5.5 -4.5,9v1h6v-1c0,-3 1,-5 3.5,-7.5l2,-2c3,-3 6.5,-5.5 6.5,-11.5 0,-8 -6,-14 -14,-14zM51,65v8h6v-8z"/>
+</vector>

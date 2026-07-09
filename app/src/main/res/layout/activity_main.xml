@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF0A0A0A"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- هدر -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡"
+            android:textSize="28sp"
+            android:layout_marginEnd="8dp"/>
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAST IP CHECK"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FF00FF41"
+            android:shadowColor="#FF00FF41"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"/>
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡"
+            android:textSize="28sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- خط جداکننده -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF00FF41"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- متن راهنما -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ SYSTEM READY ]"
+        android:textSize="14sp"
+        android:textColor="#FF00AA33"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click button to trace IP..."
+        android:textSize="13sp"
+        android:textColor="#FF00AA33"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- دکمه هکری -->
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp">
+        
+        <!-- بک‌گراند دکمه -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background"/>
+        
+        <!-- دکمه اصلی -->
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="🔍 TRACE LOCATION"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF000000"
+            android:backgroundTint="#FF00FF41"
+            android:fontFamily="monospace"
+            android:shadowColor="#FF00CC33"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8"
+            android:stateListAnimator="@null"/>
+    </FrameLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="280dp"
+        android:layout_height="4dp"
+        android:visibility="gone"
+        android:progressTint="#FF00FF41"
+        android:progressBackgroundTint="#FF1A1A1A"
+        android:indeterminate="true"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- متن وضعیت -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> Ready"
+        android:textSize="12sp"
+        android:textColor="#FF00AA33"
+        android:fontFamily="monospace"
+        android:visibility="gone"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- کارت نمایش نتایج -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF111111"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="10dp">
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="> Waiting for command..."
+                android:textSize="14sp"
+                android:textColor="#FF00FF41"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="6dp"
+                android:padding="12dp"
+                android:background="#FF0D0D0D"/>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- فوتر -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Hamed Farifteh"
+        android:textSize="11sp"
+        android:textColor="#FF00AA33"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2026 | v1.0"
+        android:textSize="10sp"
+        android:textColor="#FF006622"
+        android:fontFamily="monospace"
+        android:alpha="0.5"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
